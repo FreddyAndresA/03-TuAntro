@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3d5c1b1a38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Antro</title>
+</head>
+<body>
+    
+
+    <main class="main">
+        <h2 class="neon-rojo">Bienvenido a</h2>
+        <h1 class="neon-amarillo">Tu Antro</h1>
+        
+        <form action="" class="formulario" method="POST">
+
+            <div class="campo">
+                <label class="label" for="edad">Veamos si tienes la edad necesaria:</label>
+                <input class="input" type="number" id="edad" placeholder="Solo numeros por fa !">
+            </div>
+
+
+            <div class="campo">
+                <label class="label" for="genero">Niño o Damita ?</label>
+                <select class="select" name="" id="genero">
+                    <option value="">Selecciona una opción</option>
+                    <option value="niña">Niña</option>
+                    <option value="niño">Niño</option>
+                </select>
+            </div>    
+        </form>
+        
+        <div class="campo">
+            <button class="input boton" id="boton" type="submit">Toma tu info...</button>
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.main {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.neon-rojo {
+    font-weight: 200;
+    font-size: 3rem;
+    animation: neon-rojo 5s linear infinite;
+}
+
+.neon-amarillo {
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: 200;
+    font-size: 15rem;
+    animation: neon-amarillo 5s linear infinite;
+}
+
+.formulario {
+    margin-top: 2rem;
+}
+
+.campo {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.label {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.input,
+.select {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.boton {
+    background-color: gold;
+    padding: 1rem 2rem;
+    transition: opacity 0.2s;
+}
+
+.boton:hover {
+    opacity: 0.7;
+}
+
+
+@keyframes neon-rojo {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%
+    {
+        color: white;
+        text-shadow:   0 0 10px white,
+                       0 0 40px white;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% 
+    {
+        color: white;
+        text-shadow:   0 0 10px white,
+                       0 0 20px white,
+                       0 0 40px white,
+                       0 0 80px white,
+                       0 0 160px white;
+    }
+}
+
+@keyframes neon-amarillo {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%
+    {
+        color: gold;
+        text-shadow:   0 0 10px gold,
+                       0 0 40px gold;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% 
+    {
+        color: gold;
+        text-shadow:   0 0 10px gold,
+                       0 0 20px gold,
+                       0 0 40px gold,
+                       0 0 80px gold,
+                       0 0 160px gold;
+    }
+}
+
+
+.swal-overlay {
+    background-color: gold;
+}
+
+.swal-button {
+    font-size: 1.5rem !important;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    background-color: black;
+    font-size: 12px;
+    border: 1px solid black;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  }
+
